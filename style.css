@@ -1,0 +1,97 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+header {
+	display: inline-block;
+	background-image: url(image1.jpg);
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 1em;
+}
+
+.navigation li {
+	list-style: none;
+	margin-right: 1em;
+}
+
+.center {
+	padding: 1em;
+}
+
+aside {
+	padding: 1em;
+	background-image: url(image2.jpg);
+	 
+}
+
+aside:first-child {
+	display: none;
+}
+
+footer {
+	display: inline-block;
+	background-color: #eaeaea;
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+@media (min-width: 450px) {
+	.aside {
+		width: 30%;
+	}
+
+@media (min-width: 450px) {
+	h1,
+	.navigation,
+	.navigation > ul > li {
+		display: inline-block;
+	}
+
+aside {
+	float: left;
+}
+
+aside:first-child {
+	display: block;
+	float: left;
+	width: 35%;
+}
+
+aside:nth-child(3) {
+	margin-top: 1em;
+}
+
+.center {
+	float: left;
+	width: 65%;
+}
+
+main:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+@media (min-width: 800px) {
+	h1,
+	.navigation,
+	.navigation > ul > li {
+		display: inline-block; 
+}
+
+aside:first-child {
+	display: block;
+	width: 20%;
+}
+.center {
+	width: 60%;
+}
+aside:nth-child(3) {
+	width: 20%;
+	float: left;
+}
+
+
+
